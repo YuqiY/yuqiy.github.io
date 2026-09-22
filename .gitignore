@@ -1,0 +1,11 @@
+# Local/editor artifacts
+.DS_Store
+**/.DS_Store
+*.log
+*.tmp
+.preview/
+.sites-runtime/
+.env
+.env.*
+!.env.example
+# Site output is source in this buildless project; track dist/.
