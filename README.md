@@ -28,11 +28,7 @@ Biographical and academic content comes from `cv-academic.tex` and `myinfo.tex` 
 
 The CV PDF was compiled from separate temporary copies of the current source. Only missing LaTeX macro declarations were added to the temporary style file for compilation; no CV content was changed. The original files in the job-market project remain unchanged.
 
-Design references:
 
-- https://www.ningma7.com/
-- https://harishguda.me/about/
-- https://www.linawang.me/
 
 The design uses conventional About/Research/Teaching/CV navigation, restrained serif text, compact paper citations, burgundy links, and Yuqi’s selected portrait. None of the reference academics’ biographies, photographs, or research has been reused.
 
