@@ -2,7 +2,7 @@
 
 The permanent local working copy is `/Users/yuqiyang/Documents/personal-website`.
 
-An unpublished local website built with Sites, using Ning Ma, Harish Guda, and Lina Wang’s academic websites as design references. Nothing has been registered, uploaded, synchronized, or deployed.
+An unpublished static website built with Sites, using Ning Ma, Harish Guda, and Lina Wang’s academic websites as design references. Hosting and automatic deployment are not configured; storing the source on GitHub does not publish the website.
 
 ## Preview
 
@@ -16,8 +16,8 @@ No external fonts, JavaScript libraries, tracking, or remote images are required
 
 ## Pages
 
-- `dist/index.html`: biography, contact, education, professional service, and applied experience.
-- `dist/research.html`: research interests and methods, working papers, work in progress, and presentations.
+- `dist/index.html`: introductory paragraphs and portrait.
+- `dist/research.html`: working papers (including work in progress), and talks and presentations.
 - `dist/teaching.html`: instructor and teaching-assistant experience, evaluations, and courses prepared to teach.
 - `dist/styles.css`: shared styling, mobile layout, and print styles.
 - `dist/assets/Yuqi-Yang-CV.pdf`: current two-page CV download.
@@ -34,10 +34,10 @@ Design references:
 - https://harishguda.me/about/
 - https://www.linawang.me/
 
-The redesign uses conventional About/Research/Teaching/CV navigation, restrained serif text, compact paper citations, burgundy links, and a contact block. None of the reference academics’ biographies, photographs, or research has been reused.
+The design uses conventional About/Research/Teaching/CV navigation, restrained serif text, compact paper citations, burgundy links, and Yuqi’s selected portrait. None of the reference academics’ biographies, photographs, or research has been reused.
 
 The local `.openai/hosting.json` identifies the static directory only. No hosted project ID exists. Do not publish unless requested.
 
 ## Project maintenance
 
-Use this folder as the main working copy and add it as a local project in the desktop app. Local Git history is initialized; no remote repository or publishing workflow is configured. See `AGENTS.md` for preserved instructions and `PROJECT_NOTES.md` for improvements to discuss.
+Use this folder as the main working copy. Edit the HTML files in VS Code, save, and refresh the local browser preview. Commit and push source changes separately from publishing. No publishing workflow is configured. See `AGENTS.md` for preserved instructions and `PROJECT_NOTES.md` for improvements to discuss.

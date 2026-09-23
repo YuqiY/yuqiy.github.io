@@ -14,8 +14,8 @@
 ## Design and site structure
 
 - Preserve the restrained academic style inspired by https://www.ningma7.com/, https://harishguda.me/about/, and https://www.linawang.me/.
-- dist/index.html: About Me, contact, education, service, and applied experience.
-- dist/research.html: research interests, methods, papers, and presentations.
+- dist/index.html: introductory paragraphs and portrait only; no separate contact, education, service, or applied experience sections.
+- dist/research.html: Working Papers (including work in progress) and Talks & Presentations only; no separate work-in-progress, research interests, or methods section.
 - dist/teaching.html: teaching roles, evaluations, and courses prepared to teach.
 - dist/styles.css: shared responsive and print styling.
 - dist/assets/Yuqi-Yang-CV.pdf: downloadable website CV copy.

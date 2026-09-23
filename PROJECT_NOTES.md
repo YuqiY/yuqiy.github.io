@@ -5,18 +5,19 @@ Created September 22, 2026.
 ## Current state
 
 - Three-page static academic website with a two-page CV PDF.
-- Unpublished; no hosting registration, remote repository, or automatic deployment configured.
+- Unpublished; no hosting registration or automatic deployment configured. GitHub source storage is separate from publishing.
 - Website content comes from the academic CV, not from the people used as visual references.
 - Source CV and job-market project must remain unchanged.
+- Homepage simplified to introductory paragraphs and Yuqi’s selected portrait.
+- Research contains one Working Papers list and Talks & Presentations; the fourth paper is labeled Work in progress.
 
 ## Improvements for discussion — not yet approved changes
 
 1. Identify the job-market paper, if applicable, and decide how prominently to feature it.
 2. Add author-approved summaries and links for each paper. Do not invent abstracts from paper titles.
-3. Add a professional portrait selected by Yuqi.
-4. Tighten the homepage research introduction and consider shortening repeated CV material.
-5. Add a teaching approach or sample syllabus when supplied.
-6. Confirm publication-sensitive status wording before eventual launch.
+3. Revise the Teaching page separately with Yuqi.
+4. Add a teaching approach or sample syllabus when supplied.
+5. Confirm publication-sensitive status wording before eventual launch.
 
 ## Maintenance
 
