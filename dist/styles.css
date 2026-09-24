@@ -14,20 +14,19 @@ h3{font-size:1.18rem}
 .skip-link{position:absolute;left:1rem;top:-5rem;padding:.5rem 1rem;background:white;z-index:10}
 .skip-link:focus{top:1rem}
 .site-header{max-width:1020px;margin:auto;padding:1.55rem 2rem 1.1rem;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;gap:2rem}
-.site-name{font-size:1.15rem;text-decoration:none;color:var(--text);white-space:nowrap}
+.site-name{font-size:1.6rem;font-weight:700;line-height:1.3;text-decoration:none;color:var(--text);white-space:nowrap}
 nav{display:flex;flex-wrap:wrap;align-items:center;gap:1.7rem;font:.9375rem/1.5 var(--sans)}
 nav a{color:var(--muted);text-decoration:none;padding:.35rem 0}
 nav a[aria-current]{color:var(--accent);border-bottom:2px solid var(--accent)}
-main{max-width:960px;padding:0 2rem;margin:auto}
-.page-heading{text-align:center;margin:3.2rem 0 3rem}
-.page-heading:after{content:'';display:block;margin:1.3rem auto 0;width:48px;height:2px;background:var(--accent)}
-.page-subtitle{color:var(--muted);font-size:1rem;margin-bottom:0}
-.about-grid{display:grid;grid-template-columns:minmax(0,1fr) 230px;gap:3.6rem;align-items:start}
+main{max-width:960px;padding:2.5rem 2rem 3rem;margin:auto}
+.about-grid{display:grid;grid-template-columns:minmax(0,1fr) clamp(160px,28vw,220px);gap:clamp(1.5rem,4vw,3.6rem);align-items:start}
 .about-text{min-width:0}
 .greeting{margin-bottom:.8rem}
 .contact-card{border-left:1px solid var(--line);padding-left:1.6rem;font-size:.9375rem;line-height:1.75}
-.profile-photo{width:100%;max-width:220px;aspect-ratio:5/6;overflow:hidden;margin-bottom:1.3rem}
-.profile-photo img{display:block;width:100%;height:100%;object-fit:cover;transform:scale(1.12);transform-origin:50% 40%}
+.profile-card{min-width:0;width:100%;max-width:220px}
+.profile-photo{width:100%;max-width:220px;aspect-ratio:5/6;overflow:hidden;margin-bottom:.85rem}
+.profile-photo img{display:block;width:100%;height:100%;object-fit:cover}
+.profile-contact{display:flex;flex-direction:column;align-items:flex-start;gap:.35rem;font-size:.9375rem;font-style:normal;line-height:1.6;overflow-wrap:anywhere}
 .contact-card h2{font-size:1.3rem;margin-bottom:.8rem}
 .contact-card p{margin-bottom:1rem}
 .contact-card .contact-location{color:var(--muted);font-size:.875rem}
@@ -50,6 +49,7 @@ main{max-width:960px;padding:0 2rem;margin:auto}
 .research-summary{margin-bottom:2.2rem}
 .research-summary p{margin-bottom:.9rem}
 .section-title{border-bottom:1px solid var(--line);padding-bottom:.6rem;margin-top:2.7rem}
+.reading-page>section:first-child>.section-title{margin-top:0}
 .papers{list-style:none;counter-reset:papers;margin:0;padding:0}
 .paper{counter-increment:papers;position:relative;padding-left:1.75rem;margin-bottom:1.9rem}
 .paper:before{content:counter(papers) '.';position:absolute;left:0;top:0;color:var(--muted)}
@@ -64,20 +64,15 @@ main{max-width:960px;padding:0 2rem;margin:auto}
 .talks{padding-left:1.25rem;margin-bottom:0}
 .talks li+li{margin-top:1rem}
 .talks em{display:block;margin-bottom:.2rem}
-.teaching-institution{font-size:1.05rem;color:var(--muted);margin:-.5rem 0 1.8rem}
-.course{margin-bottom:2.5rem}
-.course h3{font-size:1.2rem;font-weight:600;line-height:1.6;margin-bottom:.3rem}
-.course-level{color:var(--muted);font-size:.9375rem;margin-bottom:.7rem}
-.course p{margin-bottom:.8rem}
-.teaching-table{width:100%;border-collapse:collapse;margin:1.1rem 0;font-size:1rem;text-align:left}
-.teaching-table th,.teaching-table td{padding:.55rem .75rem .55rem 0;border-bottom:1px solid var(--line);vertical-align:top}
-.teaching-table th{font-size:.875rem;font-family:var(--sans);font-weight:500;color:var(--muted)}
-.teaching-table td:last-child,.teaching-table th:last-child{text-align:right;padding-right:0}
-.prepared-list{columns:2;column-gap:3rem;padding-left:1.2rem}
-.prepared-list li{break-inside:avoid;padding-bottom:.3rem}
-.site-footer{max-width:956px;margin:3.5rem auto 0;padding:1.2rem 2rem 2rem;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:1rem;color:var(--muted);font:.8125rem/1.6 var(--sans)}
-.site-footer a{color:var(--muted)}
-@media(max-width:720px){.site-header{margin:0 1.5rem;padding:1.15rem 0 1rem;flex-direction:column;gap:.8rem}nav{gap:1.65rem}nav a{padding:.55rem 0}main{padding:0 1.5rem}.page-heading{margin:2rem 0 2.1rem}h1{font-size:2.25rem}.page-subtitle{font-size:.9375rem}.about-grid{grid-template-columns:1fr;gap:1.2rem}.contact-card{border-left:0;padding-left:0;border-top:1px solid var(--line);padding-top:1.5rem}.contact-card .contact-location{max-width:24rem}.education-row{grid-template-columns:1fr;gap:.15rem;padding:.9rem 0}.education-row .years{text-align:left;margin-top:.1rem}.academic-details{grid-template-columns:1fr;gap:1.5rem}.academic-details p:last-child{margin-bottom:0}.prepared-list{columns:1}.site-footer{margin:2.5rem 1.5rem 0;padding:1rem 0 1.5rem;flex-wrap:wrap;gap:.4rem 1rem}}
-@media(max-width:360px){nav{gap:1.2rem;font-size:.875rem}main{padding:0 1.25rem}}
+.teaching-institution{margin:0 0 1.6rem;padding-bottom:.6rem;border-bottom:1px solid var(--line)}
+.teaching-role+.teaching-role{margin-top:2rem}
+.teaching-role>h3{font-size:1.2rem;margin:0 0 .75rem}
+.course h4{font-size:1.0625rem;font-weight:600;line-height:1.6;margin:0 0 .4rem}
+.teaching-terms{color:var(--muted);font-size:1rem;margin:0}
+.teaching-terms{list-style:none;padding:0}
+.teaching-terms li+li{margin-top:.2rem}
+@media(max-width:720px){.site-header{margin:0 1.5rem;padding:1.15rem 0 1rem;flex-direction:column;gap:.8rem}nav{gap:1.65rem}nav a{padding:.55rem 0}main{padding:2rem 1.5rem 2.5rem}h1{font-size:2.25rem}.contact-card{border-left:0;padding-left:0;border-top:1px solid var(--line);padding-top:1.5rem}.contact-card .contact-location{max-width:24rem}.education-row{grid-template-columns:1fr;gap:.15rem;padding:.9rem 0}.education-row .years{text-align:left;margin-top:.1rem}.academic-details{grid-template-columns:1fr;gap:1.5rem}.academic-details p:last-child{margin-bottom:0}}
+@media(max-width:540px){.about-grid{grid-template-columns:1fr;gap:1.2rem}}
+@media(max-width:360px){nav{gap:1.2rem;font-size:.875rem}main{padding:2rem 1.25rem 2.5rem}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
-@media print{body{font-size:11pt}.site-header,.site-footer,.skip-link{display:none}main{max-width:none;padding:0}.page-heading{margin:0 0 2rem}.paper,.course,.education-row{break-inside:avoid}a{color:inherit;text-decoration:none}}
+@media print{body{font-size:11pt}.site-header,.skip-link{display:none}main{max-width:none;padding:0}.paper,.course,.education-row{break-inside:avoid}a{color:inherit;text-decoration:none}}
