@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Read Yuqi Yang’s curriculum vitae online or download a PDF copy.">
+  <meta name="theme-color" content="#842d38">
+  <title>CV | Yuqi Yang</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23842d38'/%3E%3Ctext x='32' y='44' text-anchor='middle' font-family='Georgia,serif' font-size='40' fill='white'%3EY%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css?v=f43c6f8">
+  <link rel="stylesheet" href="vendor/pdfjs-6.3.289/web/pdf_viewer.css">
+  <link rel="stylesheet" href="cv.css?v=1">
+  <script src="cv.js?v=1" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="site-name" href="index.html">Yuqi Yang</a>
+    <nav aria-label="Main navigation">
+      <a href="index.html">About Me</a>
+      <a href="research.html">Research</a>
+      <a href="teaching.html">Teaching</a>
+      <a href="cv.html" aria-current="page" aria-label="Curriculum vitae">CV</a>
+    </nav>
+  </header>
+  <main id="main" class="cv-page" aria-label="Curriculum vitae">
+    <div class="cv-toolbar">
+      <div id="reader-controls" class="cv-controls" hidden>
+        <div class="cv-control-group" role="group" aria-label="Page navigation">
+          <button id="previous-page" type="button" aria-label="Previous page" title="Previous page" disabled>←</button>
+          <span id="page-status" class="cv-page-status" role="status" aria-live="polite">Page 1</span>
+          <button id="next-page" type="button" aria-label="Next page" title="Next page" disabled>→</button>
+        </div>
+        <div class="cv-control-group" role="group" aria-label="Zoom">
+          <button id="zoom-out" type="button" aria-label="Zoom out" title="Zoom out" disabled>−</button>
+          <button id="fit-width" type="button" aria-label="Fit document to width" disabled>Fit width</button>
+          <button id="zoom-in" type="button" aria-label="Zoom in" title="Zoom in" disabled>+</button>
+        </div>
+      </div>
+      <a id="cv-download" class="cv-download" href="assets/Yuqi-Yang-CV.pdf" download="Yuqi-Yang-CV.pdf">Download PDF <span aria-hidden="true">↓</span></a>
+    </div>
+    <p id="cv-status" class="cv-status" role="status">Read the CV online, or download a PDF copy.</p>
+    <div id="cv-reader" class="cv-reader" hidden>
+      <div id="viewer-container" class="cv-viewer-container" tabindex="0" role="region" aria-label="CV document">
+        <div id="pdf-viewer" class="pdfViewer"></div>
+      </div>
+    </div>
+    <p class="cv-direct-link"><a href="assets/Yuqi-Yang-CV.pdf" target="_blank" rel="noopener">Open PDF in a new tab</a></p>
+    <noscript><p class="cv-status">To read the CV here, enable JavaScript, or use the PDF link above.</p></noscript>
+  </main>
+</body>
+</html>

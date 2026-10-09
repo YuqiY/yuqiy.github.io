@@ -1,0 +1,25 @@
+.cv-page{max-width:1020px;padding-top:1.6rem}
+.cv-toolbar{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:.75rem;margin-bottom:.8rem;font:.875rem/1.5 var(--sans)}
+.cv-controls{display:flex;flex-wrap:wrap;gap:.5rem 1.1rem;align-items:center}
+.cv-controls[hidden],.cv-reader[hidden],.cv-status[hidden]{display:none}
+.cv-control-group{display:flex;align-items:center;gap:.3rem}
+.cv-toolbar button{min-width:2.25rem;min-height:2.5rem;padding:.35rem .6rem;border:1px solid var(--line);border-radius:3px;background:#fff;color:var(--text);font:inherit;cursor:pointer;touch-action:manipulation}
+.cv-toolbar button:hover:not(:disabled){border-color:var(--accent);color:var(--accent)}
+.cv-toolbar button:focus-visible,.cv-viewer-container:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.cv-toolbar button:disabled{opacity:.4;cursor:default}
+.cv-page-status{min-width:5.6rem;text-align:center;font-variant-numeric:tabular-nums}
+.cv-download{margin-left:auto;white-space:nowrap;padding:.5rem .8rem;border:1px solid var(--accent);border-radius:3px;text-decoration:none}
+.cv-download:hover{background:#fcf7f7}
+.cv-download span{margin-left:.4rem}
+.cv-status{color:var(--muted);font-size:.9375rem}
+.cv-reader{position:relative;height:min(78vh,1000px);min-height:400px;border:1px solid var(--line);background:#efeeec;isolation:isolate}
+.cv-viewer-container{position:absolute;inset:0;overflow:auto;scroll-behavior:auto;overscroll-behavior:contain}
+.cv-reader .pdfViewer{--page-margin:12px auto;--page-border:1px solid #dfddda;--scale-factor:1;padding:1px 0}
+.cv-reader .pdfViewer .page{box-sizing:content-box}
+.cv-reader .textLayer,.cv-reader .annotationLayer{line-height:1;letter-spacing:normal}
+.cv-reader .textLayer span,.cv-reader .textLayer br{box-sizing:content-box}
+.cv-reader .annotationLayer a{outline-offset:0}
+.cv-native-preview{display:block;width:100%;height:100%;border:0}
+.cv-direct-link{margin:.7rem 0 0;font:.8125rem/1.6 var(--sans)}
+@media(max-width:540px){.cv-page{padding:1.25rem 1rem 2rem}.cv-toolbar{gap:.7rem}.cv-controls{justify-content:space-between;width:100%;gap:.4rem}.cv-toolbar button{min-height:2.75rem}.cv-download{margin-left:0}.cv-reader{height:72svh;min-height:380px}.cv-reader .pdfViewer{--page-margin:6px auto}}
+@media print{.cv-toolbar,.cv-status,.cv-direct-link{display:none}.cv-reader{height:auto;border:0;background:#fff}.cv-viewer-container{position:static;overflow:visible}.cv-reader .pdfViewer .page{break-after:page;border:0}}
